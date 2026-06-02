@@ -17,7 +17,7 @@ const pgPool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'hotel_proyecto_final',
-    password: '1234',
+    password: '42175465aA',
     port: 5432,
 });
 
@@ -223,7 +223,7 @@ app.get('/api/reportes/perfil-recurrente', async (req, res) => {
 
 // --- ENDPOINT: GENERAR BACKUP FULL EN VIVO ---
 app.post('/api/backup', (req, res) => {
-    const env = { ...process.env, PGPASSWORD: '1234' }; 
+    const env = { ...process.env, PGPASSWORD: '42175465aA' }; 
     const comando = `"C:\\Program Files\\PostgreSQL\\18\\bin\\pg_dump" -U postgres -h localhost -p 5432 -d hotel_proyecto_final -F c -f backup_hotel.dump`;
     exec(comando, { env }, (error, stdout, stderr) => {
         if (error) {
