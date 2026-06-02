@@ -21,7 +21,7 @@
                 <i class="fas fa-chart-pie mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-06: Ocupación</span>
             </button>
             <button onclick="mostrarSeccion('resenas')" id="btn-resenas" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
-                <i class="fas fa-brain mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-09: Analítica Mongo</span>
+                <i class="fas fa-brain mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-08/11: Analítica Mongo</span>
             </button>
 
             <p class="px-6 py-2 mt-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Recepción</p>
@@ -63,7 +63,6 @@
 
         <div class="p-8">
             
-            <!-- RC-06: OCUPACIÓN MENSUAL -->
             <div id="seccion-ocupacion" class="block">
                 <div class="flex justify-between items-end mb-4">
                     <div>
@@ -96,7 +95,6 @@
                 </div>
             </div>
 
-            <!-- RC-01: HABITACIONES LIBRES -->
             <div id="seccion-habitaciones" class="hidden">
                 <div class="flex justify-between items-end mb-6">
                     <div>
@@ -110,7 +108,6 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="grid-habitaciones"></div>
             </div>
 
-            <!-- RC-02: HUÉSPEDES ACTUALES (¡NUEVO!) -->
             <div id="seccion-huespedes-actuales" class="hidden">
                 <div class="flex justify-between items-end mb-6">
                     <div>
@@ -138,29 +135,41 @@
                 </div>
             </div>
 
-            <!-- RC-08 / RC-09: RESEÑAS MONGODB -->
             <div id="seccion-resenas" class="hidden">
                 <div class="flex justify-between items-end mb-4">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-800">Analítica Inteligente (RC-08 y RC-09)</h3>
-                        <p class="text-slate-500 text-sm">MongoDB: Pipeline con $facet y $match</p>
+                        <h3 class="text-2xl font-bold text-slate-800">Analítica Inteligente Múltiple</h3>
+                        <p class="text-slate-500 text-sm">MongoDB: Pipelines con $facet, $match, $group, $unwind</p>
                     </div>
                 </div>
 
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 mb-6 flex items-end gap-4">
-                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Desde</label><input type="date" id="filtro-inicio-mongo" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
+                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Desde (Fecha Reseña)</label><input type="date" id="filtro-inicio-mongo" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
                     <div><label class="block text-xs font-bold text-slate-500 mb-1">Hasta</label><input type="date" id="filtro-fin-mongo" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
-                    <button onclick="cargarResenasInteligente()" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-md font-semibold transition shadow-sm"><i class="fas fa-brain mr-2"></i> Analizar Período</button>
+                    <button onclick="cargarResenasInteligente()" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-md font-semibold transition shadow-sm"><i class="fas fa-brain mr-2"></i> Analizar Múltiples Pipelines</button>
                     <button onclick="limpiarFiltroMongo()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-2 rounded-md font-semibold transition shadow-sm text-sm">Limpiar</button>
                 </div>
 
                 <div id="contenedor-mongo" class="grid grid-cols-2 gap-6 hidden">
-                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6"><h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Promedios de Satisfacción (RC-08)</h4><div id="mongo-promedios"></div></div>
-                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6"><h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Top 5 Aspectos a Mejorar (RC-09)</h4><ul id="mongo-quejas" class="space-y-3"></ul></div>
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+                        <h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Promedios Satisfacción (RC-08)</h4>
+                        <div id="mongo-promedios" class="text-2xl font-black text-slate-700"></div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+                        <h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Top 5 Aspectos a Mejorar (RC-09)</h4>
+                        <ul id="mongo-quejas" class="space-y-3"></ul>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+                        <h4 class="font-bold text-amber-600 border-b border-amber-100 pb-2 mb-4">Análisis de Incidencias (RC-10)</h4>
+                        <ul id="mongo-incidencias" class="space-y-3 text-sm"></ul>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6">
+                        <h4 class="font-bold text-emerald-600 border-b border-emerald-100 pb-2 mb-4">Alergias Recurrentes (RC-11)</h4>
+                        <ul id="mongo-perfiles" class="space-y-3 text-sm"></ul>
+                    </div>
                 </div>
             </div>
 
-            <!-- REGISTRAR HUÉSPED (PERSISTENCIA POLÍGLOTA) -->
             <div id="seccion-nuevo-huesped" class="hidden">
                 <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Registrar Cliente Nuevo</h3><p class="text-slate-500 text-sm">Demostración de Persistencia Políglota (PostgreSQL + MongoDB)</p></div>
                 <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-4xl mx-auto">
@@ -186,7 +195,6 @@
                 </div>
             </div>
 
-            <!-- OC-01: CREAR RESERVA -->
             <div id="seccion-nueva-reserva" class="hidden">
                 <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Crear Reserva (OC-01)</h3><p class="text-slate-500 text-sm">Transacción ACID con validación de capacidad, disponibilidad y registro de auditoría.</p></div>
                 <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-3xl mx-auto">
@@ -206,7 +214,6 @@
                 </div>
             </div>
 
-            <!-- OC-02: CHECK-OUT -->
             <div id="seccion-checkout" class="hidden">
                 <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Check-Out y Facturación (OC-02)</h3><p class="text-slate-500 text-sm">Transacción ACID: Cierra factura, recibe pago y pasa la habitación a limpieza.</p></div>
                 <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-2xl mx-auto">
@@ -237,7 +244,7 @@
                 'ocupacion': 'Reporte Gerencial (RC-06)', 
                 'habitaciones': 'Disponibilidad (RC-01)', 
                 'huespedes-actuales': 'Recepción Activa (RC-02)',
-                'resenas': 'Analítica Inteligente (RC-08/09)', 
+                'resenas': 'Analítica Inteligente Múltiple (RC-08 a RC-11)', 
                 'nuevo-huesped': 'Directorio de Clientes', 
                 'nueva-reserva': 'Operación Crítica (OC-01)',
                 'checkout': 'Operación Crítica (OC-02)'
@@ -262,12 +269,11 @@
             } catch (error) { console.error("Error cargando listas:", error); }
         }
 
-        // --- NUEVO REPORTE: HUÉSPEDES ACTUALES (RC-02) ---
+        // --- RC-02: HUÉSPEDES ACTUALES ---
         async function cargarHuespedesActuales() {
             const tbody = document.getElementById('tabla-huespedes-actuales');
             tbody.innerHTML = '<tr><td colspan="4" class="p-10 text-center text-blue-500 font-bold">Cargando PostgreSQL...</td></tr>';
             try {
-                // Reutilizamos el endpoint que ya trae las reservas activas para el checkout
                 const respuesta = await fetch('/api/reservas/activas');
                 const datos = await respuesta.json();
                 tbody.innerHTML = '';
@@ -372,32 +378,79 @@
             } catch (error) { grid.innerHTML = `<div class="col-span-full text-center text-red-500">Error.</div>`; }
         }
 
-        // --- REPORTE MONGO INTELIGENTE CON FILTRO DE FECHAS (RC-08/09) ---
+        // --- REPORTES MONGO INTELIGENTE CON 4 PIPELINES (RC-08 a RC-11) ---
         function limpiarFiltroMongo() { document.getElementById('filtro-inicio-mongo').value = ''; document.getElementById('filtro-fin-mongo').value = ''; cargarResenasInteligente(); }
 
         async function cargarResenasInteligente() {
             document.getElementById('contenedor-mongo').classList.remove('hidden');
-            const promedios = document.getElementById('mongo-promedios'); const quejas = document.getElementById('mongo-quejas');
-            const inicio = document.getElementById('filtro-inicio-mongo').value; const fin = document.getElementById('filtro-fin-mongo').value;
-            let url = '/api/reportes/mongo-inteligente'; if(inicio && fin) url += `?inicio=${inicio}&fin=${fin}`;
-            promedios.innerHTML = 'Calculando...'; quejas.innerHTML = '';
+            const promedios = document.getElementById('mongo-promedios'); 
+            const quejas = document.getElementById('mongo-quejas');
+            
+            const inicio = document.getElementById('filtro-inicio-mongo').value; 
+            const fin = document.getElementById('filtro-fin-mongo').value;
+            let url = '/api/reportes/mongo-inteligente'; 
+            if(inicio && fin) url += `?inicio=${inicio}&fin=${fin}`;
+            
+            promedios.innerHTML = 'Calculando...'; 
+            quejas.innerHTML = '';
             
             try {
-                const respuesta = await fetch(url); const datos = await respuesta.json();
-                const satisfaccion = datos[0].analisis_satisfaccion[0]; const topQuejas = datos[0].top_aspectos_mejorables;
+                // 1. CARGAR RC-08 y RC-09 ($facet en Reseñas)
+                const respuesta = await fetch(url); 
+                const datos = await respuesta.json();
+                
+                const satisfaccion = datos[0].analisis_satisfaccion[0]; 
+                const topQuejas = datos[0].top_aspectos_mejorables;
 
-                if (!satisfaccion) { promedios.innerHTML = 'No hay reseñas.'; return; }
+                if (!satisfaccion) { 
+                    promedios.innerHTML = 'No hay reseñas.'; 
+                } else {
+                    promedios.innerHTML = `
+                        <p class="text-sm text-slate-500 uppercase font-bold">Limpieza General</p>
+                        <p class="mb-4 text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_limpieza).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
+                        <p class="text-sm text-slate-500 uppercase font-bold">Atención del Personal</p>
+                        <p class="text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_atencion).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
+                    `;
+                }
 
-                promedios.innerHTML = `
-                    <p class="text-sm text-slate-500 uppercase font-bold">Limpieza General</p>
-                    <p class="mb-4 text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_limpieza).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
-                    <p class="text-sm text-slate-500 uppercase font-bold">Atención del Personal</p>
-                    <p class="text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_atencion).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
-                `;
+                if(topQuejas.length === 0) { 
+                    quejas.innerHTML = 'No hay quejas.'; 
+                } else { 
+                    topQuejas.forEach((q, index) => { 
+                        quejas.innerHTML += `<li class="flex justify-between items-center border-b border-slate-100 pb-3 mb-2"><span class="capitalize text-slate-700 font-medium"><span class="text-rose-400 font-bold mr-2">#${index + 1}</span> ${q._id}</span> <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">${q.total} menciones</span></li>`; 
+                    }); 
+                }
 
-                if(topQuejas.length === 0) { quejas.innerHTML = 'No hay quejas.'; } 
-                else { topQuejas.forEach((q, index) => { quejas.innerHTML += `<li class="flex justify-between items-center border-b border-slate-100 pb-3 mb-2"><span class="capitalize text-slate-700 font-medium"><span class="text-rose-400 font-bold mr-2">#${index + 1}</span> ${q._id}</span> <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">${q.total} menciones</span></li>`; }); }
-            } catch(error) { promedios.innerHTML = `<span class="text-red-500">Error en MongoDB</span>`; }
+                // 2. CARGAR RC-10 (Incidencias)
+                const resIncidencias = await fetch('/api/reportes/incidencias');
+                const datosIncidencias = await resIncidencias.json();
+                const ulIncidencias = document.getElementById('mongo-incidencias');
+                ulIncidencias.innerHTML = '';
+                if(datosIncidencias.length === 0) { 
+                    ulIncidencias.innerHTML = 'No hay incidencias registradas.'; 
+                } else { 
+                    datosIncidencias.forEach(i => {
+                        ulIncidencias.innerHTML += `<li class="flex justify-between border-b pb-2"><span class="font-bold capitalize text-amber-700">${i._id}</span> <span class="text-slate-600 font-medium">Resueltos: ${Number(i.tasa_resolucion_pct).toFixed(0)}% (${i.total_reportes} casos)</span></li>`;
+                    }); 
+                }
+
+                // 3. CARGAR RC-11 (Perfiles Recurrentes)
+                const resPerfiles = await fetch('/api/reportes/perfil-recurrente');
+                const datosPerfiles = await resPerfiles.json();
+                const ulPerfiles = document.getElementById('mongo-perfiles');
+                ulPerfiles.innerHTML = '';
+                if(datosPerfiles.length === 0) { 
+                    ulPerfiles.innerHTML = 'No hay alergias registradas.'; 
+                } else { 
+                    datosPerfiles.forEach(p => {
+                        ulPerfiles.innerHTML += `<li class="flex justify-between border-b pb-2 items-center"><span class="capitalize text-slate-700 font-medium">${p._id}</span> <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-bold">${p.afectados} huéspedes</span></li>`;
+                    }); 
+                }
+
+            } catch(error) { 
+                promedios.innerHTML = `<span class="text-red-500">Error en conexión MongoDB</span>`; 
+                console.error(error); 
+            }
         }
 
         // --- SISTEMA: GENERAR BACKUP FULL ---
@@ -405,7 +458,6 @@
             const btn = document.getElementById('btn-generar-backup');
             const textoOriginal = btn.innerHTML;
             
-            // Cambiar botón a modo cargando
             btn.innerHTML = `<i class="fas fa-spinner fa-spin mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm text-yellow-500">Extrayendo Datos...</span>`;
             btn.disabled = true;
 
@@ -422,7 +474,6 @@
                 alert('❌ Error de conexión con el servidor Node.js.');
             }
 
-            // Restaurar botón
             btn.innerHTML = textoOriginal;
             btn.disabled = false;
         }
