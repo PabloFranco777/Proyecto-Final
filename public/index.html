@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel - Dashboard Operativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-100 font-sans flex h-screen overflow-hidden">
+
+    <aside class="w-64 bg-slate-900 text-white flex flex-col shadow-2xl z-10">
+        <div class="p-6 text-center border-b border-slate-700">
+            <i class="fas fa-hotel text-4xl text-yellow-500 mb-2"></i>
+            <h1 class="text-2xl font-bold tracking-widest">GRAND HOTEL</h1>
+            <p class="text-slate-400 text-xs mt-1">SISTEMA GERENCIAL</p>
+        </div>
+        <nav class="flex-1 mt-4 overflow-y-auto">
+            <p class="px-6 py-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Reportes Gerenciales</p>
+            <button onclick="mostrarSeccion('ocupacion')" id="btn-ocupacion" class="w-full flex items-center px-6 py-3 bg-slate-800 text-yellow-500 border-l-4 border-yellow-500 transition">
+                <i class="fas fa-chart-pie mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-06: Ocupación</span>
+            </button>
+            <button onclick="mostrarSeccion('resenas')" id="btn-resenas" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-brain mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-09: Analítica Mongo</span>
+            </button>
+
+            <p class="px-6 py-2 mt-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Recepción</p>
+            <button onclick="mostrarSeccion('habitaciones')" id="btn-habitaciones" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-door-open mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-01: Habitaciones Libres</span>
+            </button>
+            <button onclick="mostrarSeccion('huespedes-actuales')" id="btn-huespedes-actuales" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-users mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-02: Huéspedes Actuales</span>
+            </button>
+            <button onclick="mostrarSeccion('nuevo-huesped')" id="btn-nuevo-huesped" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-user-plus mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">Reg. Huésped</span>
+            </button>
+
+            <p class="px-6 py-2 mt-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Operaciones Críticas</p>
+            <button onclick="mostrarSeccion('nueva-reserva')" id="btn-nueva-reserva" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-calendar-check mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">OC-01: Crear Reserva</span>
+            </button>
+            <button onclick="mostrarSeccion('checkout')" id="btn-checkout" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-cash-register mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">OC-02: Check-Out y Pago</span>
+            </button>
+            <p class="px-6 py-2 mt-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Sistema</p>
+            <button onclick="generarBackupEnVivo()" id="btn-generar-backup" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
+                <i class="fas fa-server mr-3 text-lg w-6"></i>
+                <span class="font-semibold text-left text-sm">Respaldar Base de Datos</span>
+            </button>
+        </nav>
+    </aside>
+
+    <main class="flex-1 flex flex-col overflow-y-auto">
+        <header class="bg-white shadow-sm px-8 py-4 flex justify-between items-center sticky top-0 z-0">
+            <h2 class="text-xl font-bold text-slate-800" id="titulo-header">Reporte Gerencial (RC-06)</h2>
+            <div class="flex items-center gap-3">
+                <div class="text-right">
+                    <p class="text-sm font-bold text-slate-800">Administrador</p>
+                    <p class="text-xs text-green-500">● En línea</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-8">
+            
+            <!-- RC-06: OCUPACIÓN MENSUAL -->
+            <div id="seccion-ocupacion" class="block">
+                <div class="flex justify-between items-end mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800">Ocupación Mensual (RC-06)</h3>
+                        <p class="text-slate-500 text-sm" id="subtitulo-ocupacion">Vista Materializada vs. Función de PostgreSQL</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 mb-6 flex items-end gap-4">
+                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Desde</label><input type="date" id="filtro-inicio-pg" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
+                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Hasta</label><input type="date" id="filtro-fin-pg" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
+                    <button onclick="cargarOcupacion()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-semibold transition shadow-sm"><i class="fas fa-filter mr-2"></i> Filtrar</button>
+                    <button onclick="limpiarFiltroPg()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-2 rounded-md font-semibold transition shadow-sm text-sm">Limpiar</button>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200">
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase">Mes</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase">Tipo de Habitación</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase text-center">Reservas</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase text-right">Ingresos Hospedaje</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-ocupacion" class="divide-y divide-slate-100">
+                            <tr><td colspan="4" class="p-10 text-center text-slate-400">Presiona "Filtrar" para consultar PostgreSQL.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RC-01: HABITACIONES LIBRES -->
+            <div id="seccion-habitaciones" class="hidden">
+                <div class="flex justify-between items-end mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800">Disponibilidad Inmediata (RC-01)</h3>
+                        <p class="text-slate-500 text-sm">PostgreSQL: Consulta a Vista Normal</p>
+                    </div>
+                    <button onclick="cargarHabitaciones()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg shadow-md font-semibold transition flex items-center gap-2">
+                        <i class="fas fa-search"></i> Buscar Disponibles
+                    </button>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="grid-habitaciones"></div>
+            </div>
+
+            <!-- RC-02: HUÉSPEDES ACTUALES (¡NUEVO!) -->
+            <div id="seccion-huespedes-actuales" class="hidden">
+                <div class="flex justify-between items-end mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800">Huéspedes Hospedados Actualmente (RC-02)</h3>
+                        <p class="text-slate-500 text-sm">Reservas en estado "en curso" o "confirmada"</p>
+                    </div>
+                    <button onclick="cargarHuespedesActuales()" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg shadow-md font-semibold transition flex items-center gap-2">
+                        <i class="fas fa-users"></i> Ver Huéspedes Activos
+                    </button>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-200">
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase">ID Reserva</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase">Huésped</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase">Documento</th>
+                                <th class="p-4 font-semibold text-slate-600 text-sm uppercase text-right">Saldo Estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla-huespedes-actuales" class="divide-y divide-slate-100">
+                            <tr><td colspan="4" class="p-10 text-center text-slate-400">Presiona "Ver Huéspedes Activos".</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RC-08 / RC-09: RESEÑAS MONGODB -->
+            <div id="seccion-resenas" class="hidden">
+                <div class="flex justify-between items-end mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800">Analítica Inteligente (RC-08 y RC-09)</h3>
+                        <p class="text-slate-500 text-sm">MongoDB: Pipeline con $facet y $match</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 mb-6 flex items-end gap-4">
+                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Desde</label><input type="date" id="filtro-inicio-mongo" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
+                    <div><label class="block text-xs font-bold text-slate-500 mb-1">Hasta</label><input type="date" id="filtro-fin-mongo" class="border rounded-md px-3 py-2 text-sm bg-slate-50"></div>
+                    <button onclick="cargarResenasInteligente()" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-md font-semibold transition shadow-sm"><i class="fas fa-brain mr-2"></i> Analizar Período</button>
+                    <button onclick="limpiarFiltroMongo()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 px-4 py-2 rounded-md font-semibold transition shadow-sm text-sm">Limpiar</button>
+                </div>
+
+                <div id="contenedor-mongo" class="grid grid-cols-2 gap-6 hidden">
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6"><h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Promedios de Satisfacción (RC-08)</h4><div id="mongo-promedios"></div></div>
+                    <div class="bg-white rounded-xl shadow-md border border-slate-200 p-6"><h4 class="font-bold text-rose-800 border-b border-rose-100 pb-2 mb-4">Top 5 Aspectos a Mejorar (RC-09)</h4><ul id="mongo-quejas" class="space-y-3"></ul></div>
+                </div>
+            </div>
+
+            <!-- REGISTRAR HUÉSPED (PERSISTENCIA POLÍGLOTA) -->
+            <div id="seccion-nuevo-huesped" class="hidden">
+                <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Registrar Cliente Nuevo</h3><p class="text-slate-500 text-sm">Demostración de Persistencia Políglota (PostgreSQL + MongoDB)</p></div>
+                <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-4xl mx-auto">
+                    <form id="form-huesped" onsubmit="enviarHuesped(event)">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                                <h4 class="font-bold text-blue-800 mb-4 border-b border-blue-200 pb-2"><i class="fas fa-database mr-2"></i> Datos Rígidos (PostgreSQL)</h4>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Nombre Completo</label><input type="text" id="h-nombre" required class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"></div>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">DPI / Documento</label><input type="text" id="h-doc" required class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"></div>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Correo Electrónico</label><input type="email" id="h-email" required class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"></div>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Teléfono</label><input type="text" id="h-tel" class="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"></div>
+                            </div>
+                            <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                                <h4 class="font-bold text-emerald-800 mb-4 border-b border-emerald-200 pb-2"><i class="fas fa-leaf mr-2"></i> Perfil Flexible (MongoDB)</h4>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Tipo de Almohada</label><select id="h-almohada" class="w-full px-4 py-2 border rounded-lg bg-white"><option value="Estándar">Estándar</option><option value="Plumas">Plumas</option><option value="Ortopédica">Ortopédica</option></select></div>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Alergias</label><input type="text" id="h-alergias" class="w-full px-4 py-2 border rounded-lg bg-white" placeholder="Ej: Mariscos, Gluten"></div>
+                                <div class="mb-4"><label class="block text-sm font-bold text-slate-700 mb-1">Idiomas</label><input type="text" id="h-idiomas" class="w-full px-4 py-2 border rounded-lg bg-white" placeholder="Ej: Español, Inglés"></div>
+                            </div>
+                        </div>
+                        <div id="alerta-huesped" class="hidden mt-6 p-4 rounded-lg font-bold text-center"></div>
+                        <button type="submit" id="btn-submit-huesped" class="w-full mt-6 bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-lg shadow-lg transition">Guardar Cliente Simultáneamente</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- OC-01: CREAR RESERVA -->
+            <div id="seccion-nueva-reserva" class="hidden">
+                <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Crear Reserva (OC-01)</h3><p class="text-slate-500 text-sm">Transacción ACID con validación de capacidad, disponibilidad y registro de auditoría.</p></div>
+                <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-3xl mx-auto">
+                    <form id="form-reserva" onsubmit="enviarReserva(event)">
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div><label class="block text-sm font-bold text-slate-700 mb-2">Huésped</label><select id="res-huesped" required class="w-full px-4 py-2 border rounded-lg bg-slate-50"></select></div>
+                            <div><label class="block text-sm font-bold text-slate-700 mb-2">Habitación (Catálogo disponible)</label><select id="res-habitacion" required class="w-full px-4 py-2 border rounded-lg bg-slate-50"></select></div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 mb-6">
+                            <div><label class="block text-sm font-bold text-slate-700 mb-2">Check-in</label><input type="date" id="res-checkin" required class="w-full px-4 py-2 border rounded-lg"></div>
+                            <div><label class="block text-sm font-bold text-slate-700 mb-2">Check-out</label><input type="date" id="res-checkout" required class="w-full px-4 py-2 border rounded-lg"></div>
+                            <div><label class="block text-sm font-bold text-slate-700 mb-2">Personas</label><input type="number" id="res-personas" required min="1" value="1" class="w-full px-4 py-2 border rounded-lg"></div>
+                        </div>
+                        <div id="alerta-reserva" class="hidden mb-4 p-4 rounded-lg font-bold"></div>
+                        <button type="submit" id="btn-submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg shadow-lg transition"><i class="fas fa-save mr-2"></i> Confirmar Transacción ACID (OC-01)</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- OC-02: CHECK-OUT -->
+            <div id="seccion-checkout" class="hidden">
+                <div class="mb-6"><h3 class="text-2xl font-bold text-slate-800">Check-Out y Facturación (OC-02)</h3><p class="text-slate-500 text-sm">Transacción ACID: Cierra factura, recibe pago y pasa la habitación a limpieza.</p></div>
+                <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 max-w-2xl mx-auto">
+                    <form id="form-checkout" onsubmit="enviarCheckout(event)">
+                        <div class="mb-6"><label class="block text-sm font-bold text-slate-700 mb-2">Seleccionar Reserva Activa</label><select id="checkout-reserva" required class="w-full px-4 py-2 border rounded-lg bg-slate-50 text-lg"></select></div>
+                        <div class="mb-8"><label class="block text-sm font-bold text-slate-700 mb-2">Método de Pago Final</label><select id="checkout-metodo" required class="w-full px-4 py-2 border rounded-lg bg-slate-50"><option value="Tarjeta">Tarjeta de Crédito / Débito</option><option value="Efectivo">Efectivo</option><option value="Transferencia">Transferencia Bancaria</option></select></div>
+                        <div id="alerta-checkout" class="hidden mb-4 p-4 rounded-lg font-bold text-center"></div>
+                        <button type="submit" id="btn-submit-checkout" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-lg shadow-lg transition"><i class="fas fa-cash-register mr-2"></i> Ejecutar Operación de Check-Out (OC-02)</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // --- NAVEGACIÓN ---
+        function mostrarSeccion(seccion) {
+            const secciones = ['ocupacion', 'habitaciones', 'huespedes-actuales', 'resenas', 'nuevo-huesped', 'nueva-reserva', 'checkout'];
+            secciones.forEach(s => {
+                document.getElementById('seccion-' + s).classList.add('hidden');
+                document.getElementById('btn-' + s).className = "w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition";
+            });
+            document.getElementById('seccion-' + seccion).classList.remove('hidden');
+            document.getElementById('btn-' + seccion).className = "w-full flex items-center px-6 py-3 bg-slate-800 text-yellow-500 border-l-4 border-yellow-500 transition";
+            
+            const titulos = { 
+                'ocupacion': 'Reporte Gerencial (RC-06)', 
+                'habitaciones': 'Disponibilidad (RC-01)', 
+                'huespedes-actuales': 'Recepción Activa (RC-02)',
+                'resenas': 'Analítica Inteligente (RC-08/09)', 
+                'nuevo-huesped': 'Directorio de Clientes', 
+                'nueva-reserva': 'Operación Crítica (OC-01)',
+                'checkout': 'Operación Crítica (OC-02)'
+            };
+            document.getElementById('titulo-header').innerText = titulos[seccion];
+
+            if(seccion === 'nueva-reserva') cargarListasFormulario();
+            if(seccion === 'checkout') cargarReservasActivas();
+            if(seccion === 'huespedes-actuales') cargarHuespedesActuales();
+        }
+
+        // --- CARGAR LISTAS ---
+        async function cargarListasFormulario() {
+            try {
+                const resHuespedes = await fetch('/api/huespedes'); const huespedes = await resHuespedes.json();
+                const selectHuesped = document.getElementById('res-huesped'); selectHuesped.innerHTML = '<option value="">Seleccione un huésped...</option>';
+                huespedes.forEach(h => selectHuesped.innerHTML += `<option value="${h.id_huesped}">${h.nombre_completo} (${h.documento_identidad})</option>`);
+
+                const resHabitaciones = await fetch('/api/habitaciones/disponibles'); const habitaciones = await resHabitaciones.json();
+                const selectHabitacion = document.getElementById('res-habitacion'); selectHabitacion.innerHTML = '<option value="">Seleccione una habitación...</option>';
+                habitaciones.forEach(h => selectHabitacion.innerHTML += `<option value="${h.id_habitacion}">Hab. ${h.numero_habitacion} - ${h.tipo} ($${h.precio_noche})</option>`);
+            } catch (error) { console.error("Error cargando listas:", error); }
+        }
+
+        // --- NUEVO REPORTE: HUÉSPEDES ACTUALES (RC-02) ---
+        async function cargarHuespedesActuales() {
+            const tbody = document.getElementById('tabla-huespedes-actuales');
+            tbody.innerHTML = '<tr><td colspan="4" class="p-10 text-center text-blue-500 font-bold">Cargando PostgreSQL...</td></tr>';
+            try {
+                // Reutilizamos el endpoint que ya trae las reservas activas para el checkout
+                const respuesta = await fetch('/api/reservas/activas');
+                const datos = await respuesta.json();
+                tbody.innerHTML = '';
+                if (datos.length === 0) return tbody.innerHTML = '<tr><td colspan="4" class="p-8 text-center text-slate-500">No hay huéspedes alojados actualmente.</td></tr>';
+                datos.forEach(r => {
+                    tbody.innerHTML += `<tr class="hover:bg-slate-50 border-b transition">
+                        <td class="p-4 text-slate-800 font-bold">#${r.id_reserva}</td>
+                        <td class="p-4 text-slate-600 font-medium">${r.nombre_completo}</td>
+                        <td class="p-4 text-slate-500">${r.documento_identidad}</td>
+                        <td class="p-4 text-right text-emerald-600 font-bold">$${Number(r.total_estimado).toLocaleString('en-US', {minimumFractionDigits: 2})}</td>
+                    </tr>`;
+                });
+            } catch (error) { tbody.innerHTML = `<tr><td colspan="4" class="p-8 text-center text-red-500">Error.</td></tr>`; }
+        }
+
+        // --- ENVIAR NUEVO HUÉSPED ---
+        async function enviarHuesped(event) {
+            event.preventDefault(); const btn = document.getElementById('btn-submit-huesped'); const alerta = document.getElementById('alerta-huesped');
+            const datos = { nombre_completo: document.getElementById('h-nombre').value, documento_identidad: document.getElementById('h-doc').value, email: document.getElementById('h-email').value, telefono: document.getElementById('h-tel').value, tipo_almohada: document.getElementById('h-almohada').value, alergias: document.getElementById('h-alergias').value, idiomas: document.getElementById('h-idiomas').value };
+            btn.innerHTML = 'Guardando...'; btn.disabled = true;
+            try {
+                const respuesta = await fetch('/api/huespedes', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
+                const resultado = await respuesta.json(); alerta.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+                if (resultado.exito) { alerta.classList.add('bg-green-100', 'text-green-700'); alerta.innerHTML = `Exito: ${resultado.mensaje}`; document.getElementById('form-huesped').reset(); cargarListasFormulario(); } 
+                else { alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error: ${resultado.error}`; }
+            } catch (e) { alerta.classList.remove('hidden'); alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error de conexión.`; }
+            btn.innerHTML = 'Guardar Cliente Simultáneamente'; btn.disabled = false;
+        }
+
+        // --- ENVIAR RESERVA (OC-01) ---
+        async function enviarReserva(event) {
+            event.preventDefault(); const btn = document.getElementById('btn-submit'); const alerta = document.getElementById('alerta-reserva');
+            const datos = { id_huesped: document.getElementById('res-huesped').value, id_habitacion: document.getElementById('res-habitacion').value, fecha_checkin: document.getElementById('res-checkin').value, fecha_checkout: document.getElementById('res-checkout').value, cantidad_personas: document.getElementById('res-personas').value };
+            btn.innerHTML = 'Procesando...'; btn.disabled = true;
+            try {
+                const respuesta = await fetch('/api/reservas', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
+                const resultado = await respuesta.json(); alerta.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+                if (resultado.exito) { alerta.classList.add('bg-green-100', 'text-green-700'); alerta.innerHTML = `Exito: ${resultado.mensaje}`; document.getElementById('form-reserva').reset(); cargarListasFormulario(); } 
+                else { alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error: ${resultado.error}`; }
+            } catch (e) { alerta.classList.remove('hidden'); alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error de conexión.`; }
+            btn.innerHTML = 'Confirmar Transacción ACID (OC-01)'; btn.disabled = false;
+        }
+
+        // --- CHECKOUT (OC-02) ---
+        async function cargarReservasActivas() {
+            try {
+                const respuesta = await fetch('/api/reservas/activas'); const reservas = await respuesta.json();
+                const select = document.getElementById('checkout-reserva'); select.innerHTML = '<option value="">Selecciona la reserva a cobrar...</option>';
+                reservas.forEach(r => select.innerHTML += `<option value="${r.id_reserva}">Reserva #${r.id_reserva} - ${r.nombre_completo} (Saldo Est.: $${r.total_estimado})</option>`);
+            } catch (error) { console.error(error); }
+        }
+
+        async function enviarCheckout(event) {
+            event.preventDefault(); const btn = document.getElementById('btn-submit-checkout'); const alerta = document.getElementById('alerta-checkout');
+            const datos = { id_reserva: document.getElementById('checkout-reserva').value, metodo_pago: document.getElementById('checkout-metodo').value };
+            btn.innerHTML = 'Procesando Pago...'; btn.disabled = true;
+            try {
+                const respuesta = await fetch('/api/checkout', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(datos) });
+                const resultado = await respuesta.json(); alerta.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+                if (resultado.exito) { alerta.classList.add('bg-green-100', 'text-green-700'); alerta.innerHTML = `Exito: ${resultado.mensaje}`; document.getElementById('form-checkout').reset(); cargarReservasActivas(); } 
+                else { alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error: ${resultado.error}`; }
+            } catch (e) { alerta.classList.remove('hidden'); alerta.classList.add('bg-red-100', 'text-red-700'); alerta.innerHTML = `Error de conexión.`; }
+            btn.innerHTML = 'Ejecutar Operación de Check-Out (OC-02)'; btn.disabled = false;
+        }
+
+        // --- REPORTES POSTGRES CON FILTRO DINÁMICO (RC-06) ---
+        function limpiarFiltroPg() { document.getElementById('filtro-inicio-pg').value = ''; document.getElementById('filtro-fin-pg').value = ''; cargarOcupacion(); }
+
+        async function cargarOcupacion() {
+            const inicio = document.getElementById('filtro-inicio-pg').value; const fin = document.getElementById('filtro-fin-pg').value;
+            const subtitulo = document.getElementById('subtitulo-ocupacion');
+            let url = '/api/reportes/ocupacion';
+            if(inicio && fin) { url += `?inicio=${inicio}&fin=${fin}`; subtitulo.innerText = `Mostrando resultados desde ${inicio} hasta ${fin} (Función PostgreSQL)`; subtitulo.classList.add('text-indigo-600', 'font-bold'); } 
+            else { subtitulo.innerText = "Mostrando histórico global (Vista Materializada)"; subtitulo.classList.remove('text-indigo-600', 'font-bold'); }
+
+            const tbody = document.getElementById('tabla-ocupacion'); tbody.innerHTML = '<tr><td colspan="4" class="p-10 text-center font-bold">Consultando a PostgreSQL...</td></tr>';
+            try {
+                const respuesta = await fetch(url); const datos = await respuesta.json(); tbody.innerHTML = '';
+                let thead = `<tr class="bg-slate-50 border-b border-slate-200">`;
+                if(!inicio && !fin) { thead += `<th class="p-4 font-semibold text-slate-600 text-sm uppercase">Mes</th>`; }
+                thead += `<th class="p-4 font-semibold text-slate-600 text-sm uppercase">Tipo de Habitación</th><th class="p-4 font-semibold text-slate-600 text-sm uppercase text-center">Reservas</th><th class="p-4 font-semibold text-slate-600 text-sm uppercase text-right">Ingresos Hospedaje</th></tr>`;
+                document.querySelector('#seccion-ocupacion thead').innerHTML = thead;
+
+                if (datos.length === 0) return tbody.innerHTML = '<tr><td colspan="4" class="p-8 text-center text-slate-500">No hay reservas en el rango seleccionado.</td></tr>';
+                datos.forEach(fila => {
+                    let tr = `<tr class="hover:bg-slate-50 border-b transition">`;
+                    if(!inicio && !fin) tr += `<td class="p-4 text-slate-800 font-medium">${fila.mes}</td>`;
+                    tr += `<td class="p-4">${fila.tipo_habitacion || fila.tipo}</td><td class="p-4 text-center"><span class="bg-blue-100 text-blue-700 py-1 px-3 rounded-full text-xs font-bold">${fila.total_reservas}</span></td><td class="p-4 text-right text-emerald-600 font-bold text-lg">$${Number(fila.ingresos_hospedaje).toLocaleString('en-US', {minimumFractionDigits: 2})}</td></tr>`;
+                    tbody.innerHTML += tr;
+                });
+            } catch (e) { tbody.innerHTML = `<tr><td colspan="4" class="text-center text-red-500">Error.</td></tr>`; }
+        }
+
+        async function cargarHabitaciones() {
+            const grid = document.getElementById('grid-habitaciones'); grid.innerHTML = '<div class="col-span-full p-10 text-center text-emerald-500 font-bold">Cargando PostgreSQL...</div>';
+            try {
+                const respuesta = await fetch('/api/habitaciones/disponibles'); const datos = await respuesta.json(); grid.innerHTML = '';
+                if (datos.length === 0) return grid.innerHTML = '<div class="col-span-full p-8 text-center">No hay habitaciones disponibles.</div>';
+                datos.forEach(hab => {
+                    grid.innerHTML += `<div class="bg-white rounded-xl shadow border overflow-hidden"><div class="bg-emerald-50 border-b p-4 flex justify-between items-center"><h4 class="font-bold text-emerald-800">Hab. ${hab.numero_habitacion}</h4><span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-1 rounded font-bold">Piso ${hab.piso}</span></div><div class="p-4"><p class="text-slate-600 font-medium mb-1">${hab.tipo}</p><div class="mt-4 pt-4 border-t flex justify-between items-center"><span class="text-xs text-slate-400 font-bold">PRECIO</span><span class="text-xl font-black text-slate-800">$${Number(hab.precio_noche).toFixed(2)}</span></div></div></div>`;
+                });
+            } catch (error) { grid.innerHTML = `<div class="col-span-full text-center text-red-500">Error.</div>`; }
+        }
+
+        // --- REPORTE MONGO INTELIGENTE CON FILTRO DE FECHAS (RC-08/09) ---
+        function limpiarFiltroMongo() { document.getElementById('filtro-inicio-mongo').value = ''; document.getElementById('filtro-fin-mongo').value = ''; cargarResenasInteligente(); }
+
+        async function cargarResenasInteligente() {
+            document.getElementById('contenedor-mongo').classList.remove('hidden');
+            const promedios = document.getElementById('mongo-promedios'); const quejas = document.getElementById('mongo-quejas');
+            const inicio = document.getElementById('filtro-inicio-mongo').value; const fin = document.getElementById('filtro-fin-mongo').value;
+            let url = '/api/reportes/mongo-inteligente'; if(inicio && fin) url += `?inicio=${inicio}&fin=${fin}`;
+            promedios.innerHTML = 'Calculando...'; quejas.innerHTML = '';
+            
+            try {
+                const respuesta = await fetch(url); const datos = await respuesta.json();
+                const satisfaccion = datos[0].analisis_satisfaccion[0]; const topQuejas = datos[0].top_aspectos_mejorables;
+
+                if (!satisfaccion) { promedios.innerHTML = 'No hay reseñas.'; return; }
+
+                promedios.innerHTML = `
+                    <p class="text-sm text-slate-500 uppercase font-bold">Limpieza General</p>
+                    <p class="mb-4 text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_limpieza).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
+                    <p class="text-sm text-slate-500 uppercase font-bold">Atención del Personal</p>
+                    <p class="text-3xl text-indigo-600 font-black">${Number(satisfaccion.promedio_atencion).toFixed(1)} <span class="text-lg text-slate-400">/ 5.0 <i class="fas fa-star text-yellow-400"></i></span></p>
+                `;
+
+                if(topQuejas.length === 0) { quejas.innerHTML = 'No hay quejas.'; } 
+                else { topQuejas.forEach((q, index) => { quejas.innerHTML += `<li class="flex justify-between items-center border-b border-slate-100 pb-3 mb-2"><span class="capitalize text-slate-700 font-medium"><span class="text-rose-400 font-bold mr-2">#${index + 1}</span> ${q._id}</span> <span class="bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">${q.total} menciones</span></li>`; }); }
+            } catch(error) { promedios.innerHTML = `<span class="text-red-500">Error en MongoDB</span>`; }
+        }
+
+        // --- SISTEMA: GENERAR BACKUP FULL ---
+        async function generarBackupEnVivo() {
+            const btn = document.getElementById('btn-generar-backup');
+            const textoOriginal = btn.innerHTML;
+            
+            // Cambiar botón a modo cargando
+            btn.innerHTML = `<i class="fas fa-spinner fa-spin mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm text-yellow-500">Extrayendo Datos...</span>`;
+            btn.disabled = true;
+
+            try {
+                const respuesta = await fetch('/api/backup', { method: 'POST' });
+                const resultado = await respuesta.json();
+                
+                if (resultado.exito) {
+                    alert('✅ ' + resultado.mensaje);
+                } else {
+                    alert('❌ Error: ' + resultado.error);
+                }
+            } catch (error) {
+                alert('❌ Error de conexión con el servidor Node.js.');
+            }
+
+            // Restaurar botón
+            btn.innerHTML = textoOriginal;
+            btn.disabled = false;
+        }
+    </script>
+</body>
+</html>
