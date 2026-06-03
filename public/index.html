@@ -28,6 +28,7 @@
             <button onclick="mostrarSeccion('habitaciones')" id="btn-habitaciones" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
                 <i class="fas fa-door-open mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-01: Habitaciones Libres</span>
             </button>
+            
             <button onclick="mostrarSeccion('huespedes-actuales')" id="btn-huespedes-actuales" class="w-full flex items-center px-6 py-3 text-slate-400 hover:bg-slate-800 hover:text-white border-l-4 border-transparent transition">
                 <i class="fas fa-users mr-3 text-lg w-6"></i><span class="font-semibold text-left text-sm">RC-02: Huéspedes Actuales</span>
             </button>
@@ -98,13 +99,22 @@
             <div id="seccion-habitaciones" class="hidden">
                 <div class="flex justify-between items-end mb-6">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-800">Disponibilidad Inmediata (RC-01)</h3>
-                        <p class="text-slate-500 text-sm">PostgreSQL: Consulta a Vista Normal</p>
+                        <h3 class="text-2xl font-bold text-slate-800">Monitoreo de Habitaciones (RC-01)</h3>
+                        <p class="text-slate-500 text-sm">PostgreSQL: Vista de Disponibilidad e Historial de Limpieza</p>
                     </div>
                     <button onclick="cargarHabitaciones()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg shadow-md font-semibold transition flex items-center gap-2">
-                        <i class="fas fa-search"></i> Buscar Disponibles
+                        <i class="fas fa-sync-alt"></i> Actualizar Monitor
                     </button>
                 </div>
+
+                <h4 class="font-bold text-slate-700 mb-3 uppercase tracking-wider text-sm"><i class="fas fa-check-circle text-emerald-500 mr-2"></i> Listas para Asignar</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-10" id="grid-habitaciones"></div>
+
+                <h4 class="font-bold text-slate-700 mb-3 uppercase tracking-wider text-sm"><i class="fas fa-broom text-amber-500 mr-2"></i> En Proceso de Limpieza (Temporizador Activo)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="grid-limpieza">
+                    <div class="col-span-full p-4 bg-slate-50 text-slate-400 text-center rounded-lg border border-dashed">No hay habitaciones en limpieza en este momento.</div>
+                </div>
+            </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="grid-habitaciones"></div>
             </div>
 
@@ -208,6 +218,10 @@
                             <div><label class="block text-sm font-bold text-slate-700 mb-2">Check-out</label><input type="date" id="res-checkout" required class="w-full px-4 py-2 border rounded-lg"></div>
                             <div><label class="block text-sm font-bold text-slate-700 mb-2">Personas</label><input type="number" id="res-personas" required min="1" value="1" class="w-full px-4 py-2 border rounded-lg"></div>
                         </div>
+                        <div id="preview-total-rc04" class="bg-blue-50 border border-blue-200 rounded-lg p-3 text-center mb-4 hidden">
+                            <span class="text-sm font-bold text-slate-600 uppercase">Total Estimado de Hospedaje (RC-04):</span>
+                            <span id="monto-preview-rc04" class="text-xl font-black text-blue-700 ml-2">$0.00</span>
+                        </div>
                         <div id="alerta-reserva" class="hidden mb-4 p-4 rounded-lg font-bold"></div>
                         <button type="submit" id="btn-submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg shadow-lg transition"><i class="fas fa-save mr-2"></i> Confirmar Transacción ACID (OC-01)</button>
                     </form>
@@ -257,6 +271,7 @@
         }
 
         // --- CARGAR LISTAS ---
+       // --- CARGAR LISTAS Y CONFIGURAR CÁLCULO EN TIEMPO REAL (RC-04) ---
         async function cargarListasFormulario() {
             try {
                 const resHuespedes = await fetch('/api/huespedes'); const huespedes = await resHuespedes.json();
@@ -266,6 +281,36 @@
                 const resHabitaciones = await fetch('/api/habitaciones/disponibles'); const habitaciones = await resHabitaciones.json();
                 const selectHabitacion = document.getElementById('res-habitacion'); selectHabitacion.innerHTML = '<option value="">Seleccione una habitación...</option>';
                 habitaciones.forEach(h => selectHabitacion.innerHTML += `<option value="${h.id_habitacion}">Hab. ${h.numero_habitacion} - ${h.tipo} ($${h.precio_noche})</option>`);
+
+                // Escuchadores para calcular el total automáticamente cuando el usuario interactúe
+                const inputs = ['res-habitacion', 'res-checkin', 'res-checkout'];
+                inputs.forEach(id => {
+                    document.getElementById(id).addEventListener('change', async () => {
+                        const id_habitacion = document.getElementById('res-habitacion').value;
+                        const checkin = document.getElementById('res-checkin').value;
+                        const checkout = document.getElementById('res-checkout').value;
+                        const contenedorPreview = document.getElementById('preview-total-rc04');
+                        const txtMonto = document.getElementById('monto-preview-rc04');
+
+                        // Solo calcula si los tres campos obligatorios tienen datos
+                        if (id_habitacion && checkin && checkout) {
+                            try {
+                                const resCalculo = await fetch(`/api/reservas/calculo?id_habitacion=${id_habitacion}&checkin=${checkin}&checkout=${checkout}`);
+                                const datosCalculo = await resCalculo.json();
+                                
+                                if (datosCalculo && datosCalculo.total_estimado) {
+                                    txtMonto.innerText = `$${Number(datosCalculo.total_estimado).toFixed(2)}`;
+                                    contenedorPreview.classList.remove('hidden');
+                                }
+                            } catch (err) {
+                                console.error("Error en el cálculo automático RC-04:", err);
+                            }
+                        } else {
+                            contenedorPreview.classList.add('hidden');
+                        }
+                    });
+                });
+
             } catch (error) { console.error("Error cargando listas:", error); }
         }
 
@@ -368,14 +413,49 @@
         }
 
         async function cargarHabitaciones() {
-            const grid = document.getElementById('grid-habitaciones'); grid.innerHTML = '<div class="col-span-full p-10 text-center text-emerald-500 font-bold">Cargando PostgreSQL...</div>';
+            const grid = document.getElementById('grid-habitaciones'); 
+            const gridLimpieza = document.getElementById('grid-limpieza');
+            grid.innerHTML = '<div class="col-span-full p-10 text-center text-emerald-500 font-bold">Cargando Disponibles...</div>';
+            
             try {
-                const respuesta = await fetch('/api/habitaciones/disponibles'); const datos = await respuesta.json(); grid.innerHTML = '';
-                if (datos.length === 0) return grid.innerHTML = '<div class="col-span-full p-8 text-center">No hay habitaciones disponibles.</div>';
-                datos.forEach(hab => {
-                    grid.innerHTML += `<div class="bg-white rounded-xl shadow border overflow-hidden"><div class="bg-emerald-50 border-b p-4 flex justify-between items-center"><h4 class="font-bold text-emerald-800">Hab. ${hab.numero_habitacion}</h4><span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-1 rounded font-bold">Piso ${hab.piso}</span></div><div class="p-4"><p class="text-slate-600 font-medium mb-1">${hab.tipo}</p><div class="mt-4 pt-4 border-t flex justify-between items-center"><span class="text-xs text-slate-400 font-bold">PRECIO</span><span class="text-xl font-black text-slate-800">$${Number(hab.precio_noche).toFixed(2)}</span></div></div></div>`;
-                });
-            } catch (error) { grid.innerHTML = `<div class="col-span-full text-center text-red-500">Error.</div>`; }
+                // 1. Consultar Disponibles
+                const respuesta = await fetch('/api/habitaciones/disponibles'); 
+                const datos = await respuesta.json(); 
+                grid.innerHTML = '';
+                if (datos.length === 0) {
+                    grid.innerHTML = '<div class="col-span-full p-8 text-center text-slate-400">No hay habitaciones disponibles.</div>';
+                } else {
+                    datos.forEach(hab => {
+                        grid.innerHTML += `<div class="bg-white rounded-xl shadow border overflow-hidden"><div class="bg-emerald-50 border-b p-4 flex justify-between items-center"><h4 class="font-bold text-emerald-800">Hab. ${hab.numero_habitacion}</h4><span class="bg-emerald-200 text-emerald-800 text-xs px-2 py-1 rounded font-bold">Piso ${hab.piso}</span></div><div class="p-4"><p class="text-slate-600 font-medium mb-1">${hab.tipo}</p><div class="mt-4 pt-4 border-t flex justify-between items-center"><span class="text-xs text-slate-400 font-bold">PRECIO</span><span class="text-xl font-black text-slate-800">$${Number(hab.precio_noche).toFixed(2)}</span></div></div></div>`;
+                    });
+                }
+
+                // 2. Consultar En Limpieza
+                const resLimpieza = await fetch('/api/habitaciones/en-limpieza');
+                const datosLimpieza = await resLimpieza.json();
+                gridLimpieza.innerHTML = '';
+                if (datosLimpieza.length === 0) {
+                    gridLimpieza.innerHTML = '<div class="col-span-full p-4 bg-slate-50 text-slate-400 text-center rounded-lg border border-dashed text-sm">No hay habitaciones en limpieza en este momento.</div>';
+                } else {
+                    datosLimpieza.forEach(hab => {
+                        gridLimpieza.innerHTML += `
+                            <div class="bg-white rounded-xl shadow border border-amber-200 overflow-hidden animate-pulse">
+                                <div class="bg-amber-50 border-b border-amber-100 p-4 flex justify-between items-center">
+                                    <h4 class="font-bold text-amber-800">Hab. ${hab.numero_habitacion}</h4>
+                                    <span class="bg-amber-200 text-amber-900 text-xs px-2 py-1 rounded font-bold flex items-center gap-1">
+                                        <i class="fas fa-spinner fa-spin"></i> Mucama
+                                    </span>
+                                </div>
+                                <div class="p-4 bg-amber-50/30">
+                                    <p class="text-slate-500 text-xs font-bold uppercase tracking-wider mb-1">Estado del Servicio</p>
+                                    <p class="text-amber-700 font-semibold text-sm">Desinfectando habitación y reponiendo minibar...</p>
+                                </div>
+                            </div>`;
+                    });
+                }
+            } catch (error) { 
+                grid.innerHTML = `<div class="col-span-full text-center text-red-500">Error cargando monitor.</div>`; 
+            }
         }
 
         // --- REPORTES MONGO INTELIGENTE CON 4 PIPELINES (RC-08 a RC-11) ---

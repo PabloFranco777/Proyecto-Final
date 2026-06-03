@@ -50,10 +50,20 @@ app.get('/api/habitaciones/disponibles', async (req, res) => {
     }
 });
 
-// --- ENDPOINT: LISTA DE HUÉSPEDES (POR NOMBRE) ---
+// --- ENDPOINT: LISTA DE HUÉSPEDES (FILTRANDO LOS QUE YA TIENEN RESERVA ACTIVA) ---
 app.get('/api/huespedes', async (req, res) => {
     try {
-        const resultado = await pgPool.query('SELECT id_huesped, nombre_completo, documento_identidad FROM huespedes ORDER BY nombre_completo');
+        // Usamos NOT IN con una subconsulta para ocultar a los clientes ocupados
+        const resultado = await pgPool.query(`
+            SELECT id_huesped, nombre_completo, documento_identidad 
+            FROM huespedes 
+            WHERE id_huesped NOT IN (
+                SELECT id_huesped 
+                FROM reservas 
+                WHERE estado IN ('confirmada', 'en curso')
+            )
+            ORDER BY nombre_completo
+        `);
         res.json(resultado.rows);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -121,11 +131,36 @@ app.get('/api/reservas/activas', async (req, res) => {
 });
 
 // --- ENDPOINT: EJECUTAR CHECK-OUT (OC-02) ---
+// --- ENDPOINT: EJECUTAR CHECK-OUT AUTOMATIZADO CON TEMPORIZADOR (OC-02) ---
 app.post('/api/checkout', async (req, res) => {
     const { id_reserva, metodo_pago } = req.body;
     try {
+        // 1. Antes de hacer el checkout, averiguamos qué habitación tiene asignada esta reserva
+        const consultaHab = await pgPool.query('SELECT id_habitacion FROM reservas WHERE id_reserva = $1', [id_reserva]);
+        const idHabitacion = consultaHab.rows[0]?.id_habitacion;
+
+        // 2. Ejecutamos la transacción ACID en PostgreSQL (Pasa la habitación a 'limpieza')
         await pgPool.query('CALL checkout_reserva($1, $2)', [id_reserva, metodo_pago]);
-        res.json({ exito: true, mensaje: 'Transacción ACID exitosa: Check-out completado, factura cerrada y habitación en limpieza.' });
+
+        // 3. EL TEMPORIZADOR AUTOMÁTICO (Background Worker)
+        // RECOMENDACIÓN PARA TU DEFENSA: Usa 20000 ms (20 segundos) para que el ingeniero vea el cambio rápido en vivo.
+        // Si quieres los 5 minutos reales del hotel, cambia el valor a 300000 ms.
+        const TIEMPO_SIMULADO_LIMPIEZA = 20000; 
+
+        setTimeout(async () => {
+            try {
+                // El temporizador ejecuta un UPDATE automático en segundo plano
+                await pgPool.query(
+                    "UPDATE habitaciones SET estado = 'disponible' WHERE id_habitacion = $1 AND estado = 'limpieza'",
+                    [idHabitacion]
+                );
+                console.log(`🧹 [Housekeeping] La habitación ID ${idHabitacion} ha sido limpiada automáticamente.`);
+            } catch (err) {
+                console.error("Error en el proceso automático de limpieza:", err);
+            }
+        }, TIEMPO_SIMULADO_LIMPIEZA);
+
+        res.json({ exito: true, mensaje: 'Transacción ACID exitosa: Check-out completado. La habitación ha entrado en el ciclo automatizado de limpieza.' });
     } catch (error) {
         res.status(400).json({ exito: false, error: error.message });
     }
@@ -193,7 +228,7 @@ app.get('/api/reportes/incidencias', async (req, res) => {
     try {
         const Incidencia = mongoose.models.incidencias || mongoose.model('incidencias', new mongoose.Schema({}, { strict: false }));
         const pipeline = [
-            { $group: { _id: "$categoria", total_reportes: { $sum: 1 }, resueltos: { $sum: { $cond: [{ $eq: ["$estado", "resuelta"] }, 1, 0] } } } },
+            { $group: { _id: "$categoria", total_reportes: { $sum: 1 }, resueltos: { $sum: { $cond: [{ $eq: ["$estado", "Resuelta"] }, 1, 0] } } } },
             { $project: { tasa_resolucion_pct: { $multiply: [{ $divide: ["$resueltos", "$total_reportes"] }, 100] }, total_reportes: 1 } },
             { $sort: { total_reportes: -1 } }
         ];
@@ -235,6 +270,40 @@ app.post('/api/backup', (req, res) => {
         }
         res.json({ exito: true, mensaje: '¡Backup Full generado exitosamente y guardado de forma segura!' });
     });
+});
+
+// --- ENDPOINT: CÁLCULO TOTAL DE RESERVA (RC-04) ---
+app.get('/api/reservas/calculo', async (req, res) => {
+    const { id_habitacion, checkin, checkout } = req.query;
+    try {
+        // Calcula los días de diferencia multiplicados por el precio de la habitación
+        const resultado = await pgPool.query(`
+            SELECT (th.precio_noche * (CAST($3 AS DATE) - CAST($2 AS DATE))) AS total_estimado
+            FROM habitaciones h
+            JOIN tipos_habitacion th ON h.id_tipo = th.id_tipo
+            WHERE h.id_habitacion = $1
+        `, [id_habitacion, checkin, checkout]);
+        
+        res.json(resultado.rows[0]);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+// --- ENDPOINT: LISTAR HABITACIONES EN LIMPIEZA ---
+app.get('/api/habitaciones/en-limpieza', async (req, res) => {
+    try {
+        const resultado = await pgPool.query(`
+            SELECT h.id_habitacion, h.numero_habitacion, h.piso, t.nombre AS tipo 
+            FROM habitaciones h 
+            JOIN tipos_habitacion t ON h.id_tipo = t.id_tipo 
+            WHERE h.estado = 'limpieza'
+            ORDER BY h.numero_habitacion
+        `);
+        res.json(resultado.rows);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 });
 
 // --- LEVANTAR EL SERVIDOR ---
