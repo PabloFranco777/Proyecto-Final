@@ -39,7 +39,6 @@ Modifique la cadena de conexión de MongoDB en la línea de mongoose.connect().
 
 Levante el servidor ejecutando:
 
-Bash
 node index.js
 Si las conexiones son exitosas, la consola mostrará:
 
