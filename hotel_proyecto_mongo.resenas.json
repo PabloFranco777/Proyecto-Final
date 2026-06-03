@@ -1,0 +1,3083 @@
+[{
+  "_id": {
+    "$oid": "6a1cf068d9a02f7eec6330a8"
+  },
+  "id_reserva_pg": 1,
+  "fecha_publicacion": {
+    "$date": "2023-10-15T09:00:00.000Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 4,
+    "ubicacion": 5,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Excelente vista, pero el aire falló el primer día.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Desayuno"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030651"
+  },
+  "id_reserva_pg": 99,
+  "fecha_publicacion": {
+    "$date": "2026-04-16T18:55:29.985Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030652"
+  },
+  "id_reserva_pg": 20,
+  "fecha_publicacion": {
+    "$date": "2026-05-30T14:39:52.415Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 3,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030653"
+  },
+  "id_reserva_pg": 143,
+  "fecha_publicacion": {
+    "$date": "2026-04-17T00:59:48.668Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030654"
+  },
+  "id_reserva_pg": 212,
+  "fecha_publicacion": {
+    "$date": "2026-04-27T13:12:41.269Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 5,
+    "confort": 5,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030655"
+  },
+  "id_reserva_pg": 35,
+  "fecha_publicacion": {
+    "$date": "2026-05-02T05:30:13.118Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030656"
+  },
+  "id_reserva_pg": 68,
+  "fecha_publicacion": {
+    "$date": "2026-02-28T23:09:50.478Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030657"
+  },
+  "id_reserva_pg": 39,
+  "fecha_publicacion": {
+    "$date": "2026-02-18T15:16:04.030Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 5,
+    "ubicacion": 2,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030658"
+  },
+  "id_reserva_pg": 72,
+  "fecha_publicacion": {
+    "$date": "2026-02-28T18:39:37.783Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 4,
+    "ubicacion": 2,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030659"
+  },
+  "id_reserva_pg": 177,
+  "fecha_publicacion": {
+    "$date": "2026-03-08T07:01:50.835Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 3,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065a"
+  },
+  "id_reserva_pg": 126,
+  "fecha_publicacion": {
+    "$date": "2026-05-07T20:43:41.416Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 5,
+    "confort": 2,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065b"
+  },
+  "id_reserva_pg": 177,
+  "fecha_publicacion": {
+    "$date": "2026-04-13T05:27:38.697Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 2,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065c"
+  },
+  "id_reserva_pg": 132,
+  "fecha_publicacion": {
+    "$date": "2026-04-27T08:13:33.788Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065d"
+  },
+  "id_reserva_pg": 193,
+  "fecha_publicacion": {
+    "$date": "2026-04-13T00:14:25.455Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 4,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065e"
+  },
+  "id_reserva_pg": 168,
+  "fecha_publicacion": {
+    "$date": "2026-03-29T05:04:32.301Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03065f"
+  },
+  "id_reserva_pg": 107,
+  "fecha_publicacion": {
+    "$date": "2026-05-07T21:31:50.141Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030660"
+  },
+  "id_reserva_pg": 79,
+  "fecha_publicacion": {
+    "$date": "2026-05-23T18:57:15.340Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030661"
+  },
+  "id_reserva_pg": 221,
+  "fecha_publicacion": {
+    "$date": "2026-02-23T01:54:24.498Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 4,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030662"
+  },
+  "id_reserva_pg": 72,
+  "fecha_publicacion": {
+    "$date": "2026-03-01T21:37:47.560Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030663"
+  },
+  "id_reserva_pg": 179,
+  "fecha_publicacion": {
+    "$date": "2026-05-16T19:27:38.045Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 3,
+    "ubicacion": 3,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030664"
+  },
+  "id_reserva_pg": 54,
+  "fecha_publicacion": {
+    "$date": "2026-05-12T02:32:52.962Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 5,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030665"
+  },
+  "id_reserva_pg": 66,
+  "fecha_publicacion": {
+    "$date": "2026-05-15T19:33:30.524Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 5,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030666"
+  },
+  "id_reserva_pg": 209,
+  "fecha_publicacion": {
+    "$date": "2026-04-04T15:42:57.449Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 2,
+    "confort": 5,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030667"
+  },
+  "id_reserva_pg": 78,
+  "fecha_publicacion": {
+    "$date": "2026-03-04T14:52:34.073Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030668"
+  },
+  "id_reserva_pg": 58,
+  "fecha_publicacion": {
+    "$date": "2026-03-25T01:23:38.172Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030669"
+  },
+  "id_reserva_pg": 141,
+  "fecha_publicacion": {
+    "$date": "2026-05-12T00:04:57.189Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066a"
+  },
+  "id_reserva_pg": 76,
+  "fecha_publicacion": {
+    "$date": "2026-05-03T05:28:42.761Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066b"
+  },
+  "id_reserva_pg": 50,
+  "fecha_publicacion": {
+    "$date": "2026-03-07T20:36:58.491Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 2,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066c"
+  },
+  "id_reserva_pg": 111,
+  "fecha_publicacion": {
+    "$date": "2026-02-08T05:13:34.259Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 5,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066d"
+  },
+  "id_reserva_pg": 167,
+  "fecha_publicacion": {
+    "$date": "2026-05-22T10:14:50.445Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 5,
+    "confort": 5,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066e"
+  },
+  "id_reserva_pg": 112,
+  "fecha_publicacion": {
+    "$date": "2026-02-06T10:55:10.188Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 4,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03066f"
+  },
+  "id_reserva_pg": 242,
+  "fecha_publicacion": {
+    "$date": "2026-04-23T00:07:44.301Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030670"
+  },
+  "id_reserva_pg": 150,
+  "fecha_publicacion": {
+    "$date": "2026-05-13T02:52:55.246Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030671"
+  },
+  "id_reserva_pg": 169,
+  "fecha_publicacion": {
+    "$date": "2026-04-18T16:30:37.243Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030672"
+  },
+  "id_reserva_pg": 64,
+  "fecha_publicacion": {
+    "$date": "2026-05-13T22:31:30.268Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030673"
+  },
+  "id_reserva_pg": 120,
+  "fecha_publicacion": {
+    "$date": "2026-02-09T22:12:29.194Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 4,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030674"
+  },
+  "id_reserva_pg": 133,
+  "fecha_publicacion": {
+    "$date": "2026-05-05T05:31:47.981Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030675"
+  },
+  "id_reserva_pg": 139,
+  "fecha_publicacion": {
+    "$date": "2026-02-12T01:47:09.472Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030676"
+  },
+  "id_reserva_pg": 248,
+  "fecha_publicacion": {
+    "$date": "2026-03-28T09:11:55.812Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 3,
+    "confort": 1,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030677"
+  },
+  "id_reserva_pg": 213,
+  "fecha_publicacion": {
+    "$date": "2026-03-19T15:46:09.572Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030678"
+  },
+  "id_reserva_pg": 143,
+  "fecha_publicacion": {
+    "$date": "2026-03-05T01:31:02.540Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 3,
+    "confort": 4,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030679"
+  },
+  "id_reserva_pg": 237,
+  "fecha_publicacion": {
+    "$date": "2026-05-26T23:15:50.702Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 2,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067a"
+  },
+  "id_reserva_pg": 16,
+  "fecha_publicacion": {
+    "$date": "2026-02-21T21:48:14.415Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067b"
+  },
+  "id_reserva_pg": 238,
+  "fecha_publicacion": {
+    "$date": "2026-03-09T22:58:06.461Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067c"
+  },
+  "id_reserva_pg": 232,
+  "fecha_publicacion": {
+    "$date": "2026-03-02T05:05:17.791Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067d"
+  },
+  "id_reserva_pg": 122,
+  "fecha_publicacion": {
+    "$date": "2026-03-13T03:56:05.803Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 2,
+    "confort": 4,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067e"
+  },
+  "id_reserva_pg": 200,
+  "fecha_publicacion": {
+    "$date": "2026-02-11T06:08:42.074Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03067f"
+  },
+  "id_reserva_pg": 102,
+  "fecha_publicacion": {
+    "$date": "2026-05-20T13:20:18.334Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030680"
+  },
+  "id_reserva_pg": 181,
+  "fecha_publicacion": {
+    "$date": "2026-02-26T19:22:40.057Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030681"
+  },
+  "id_reserva_pg": 215,
+  "fecha_publicacion": {
+    "$date": "2026-05-05T23:26:37.091Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030682"
+  },
+  "id_reserva_pg": 89,
+  "fecha_publicacion": {
+    "$date": "2026-04-27T17:14:58.256Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 3,
+    "ubicacion": 5,
+    "confort": 5,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030683"
+  },
+  "id_reserva_pg": 154,
+  "fecha_publicacion": {
+    "$date": "2026-03-27T22:48:09.444Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030684"
+  },
+  "id_reserva_pg": 68,
+  "fecha_publicacion": {
+    "$date": "2026-03-31T23:41:54.449Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 5,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030685"
+  },
+  "id_reserva_pg": 17,
+  "fecha_publicacion": {
+    "$date": "2026-05-10T23:06:29.293Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030686"
+  },
+  "id_reserva_pg": 43,
+  "fecha_publicacion": {
+    "$date": "2026-04-25T23:19:46.025Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030687"
+  },
+  "id_reserva_pg": 213,
+  "fecha_publicacion": {
+    "$date": "2026-02-11T05:22:31.338Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030688"
+  },
+  "id_reserva_pg": 228,
+  "fecha_publicacion": {
+    "$date": "2026-04-11T11:35:53.720Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 3,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030689"
+  },
+  "id_reserva_pg": 153,
+  "fecha_publicacion": {
+    "$date": "2026-05-07T06:42:25.567Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 1,
+    "ubicacion": 2,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068a"
+  },
+  "id_reserva_pg": 244,
+  "fecha_publicacion": {
+    "$date": "2026-04-20T07:55:32.643Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068b"
+  },
+  "id_reserva_pg": 193,
+  "fecha_publicacion": {
+    "$date": "2026-05-20T19:00:58.720Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 2,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068c"
+  },
+  "id_reserva_pg": 151,
+  "fecha_publicacion": {
+    "$date": "2026-02-21T03:15:11.123Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068d"
+  },
+  "id_reserva_pg": 100,
+  "fecha_publicacion": {
+    "$date": "2026-04-05T05:22:38.958Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068e"
+  },
+  "id_reserva_pg": 215,
+  "fecha_publicacion": {
+    "$date": "2026-02-20T21:04:46.261Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 3,
+    "ubicacion": 2,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03068f"
+  },
+  "id_reserva_pg": 157,
+  "fecha_publicacion": {
+    "$date": "2026-02-11T09:26:08.422Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030690"
+  },
+  "id_reserva_pg": 209,
+  "fecha_publicacion": {
+    "$date": "2026-05-22T13:42:36.885Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 4,
+    "ubicacion": 2,
+    "confort": 4,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030691"
+  },
+  "id_reserva_pg": 219,
+  "fecha_publicacion": {
+    "$date": "2026-05-12T03:10:32.190Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030692"
+  },
+  "id_reserva_pg": 240,
+  "fecha_publicacion": {
+    "$date": "2026-03-14T00:27:20.529Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030693"
+  },
+  "id_reserva_pg": 206,
+  "fecha_publicacion": {
+    "$date": "2026-04-05T05:20:09.099Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 1,
+    "ubicacion": 5,
+    "confort": 5,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030694"
+  },
+  "id_reserva_pg": 55,
+  "fecha_publicacion": {
+    "$date": "2026-04-10T03:29:14.599Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 5,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030695"
+  },
+  "id_reserva_pg": 28,
+  "fecha_publicacion": {
+    "$date": "2026-04-12T06:52:09.009Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030696"
+  },
+  "id_reserva_pg": 82,
+  "fecha_publicacion": {
+    "$date": "2026-02-23T17:48:17.780Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 5,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030697"
+  },
+  "id_reserva_pg": 173,
+  "fecha_publicacion": {
+    "$date": "2026-05-03T02:47:54.865Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030698"
+  },
+  "id_reserva_pg": 134,
+  "fecha_publicacion": {
+    "$date": "2026-04-15T00:19:18.393Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030699"
+  },
+  "id_reserva_pg": 124,
+  "fecha_publicacion": {
+    "$date": "2026-05-10T10:05:16.415Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069a"
+  },
+  "id_reserva_pg": 138,
+  "fecha_publicacion": {
+    "$date": "2026-05-19T11:06:43.756Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069b"
+  },
+  "id_reserva_pg": 37,
+  "fecha_publicacion": {
+    "$date": "2026-02-12T15:31:55.380Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069c"
+  },
+  "id_reserva_pg": 45,
+  "fecha_publicacion": {
+    "$date": "2026-05-04T01:54:28.685Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069d"
+  },
+  "id_reserva_pg": 171,
+  "fecha_publicacion": {
+    "$date": "2026-03-04T20:45:58.484Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 2,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069e"
+  },
+  "id_reserva_pg": 112,
+  "fecha_publicacion": {
+    "$date": "2026-03-08T12:13:08.411Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03069f"
+  },
+  "id_reserva_pg": 51,
+  "fecha_publicacion": {
+    "$date": "2026-04-07T15:37:13.984Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 5,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a0"
+  },
+  "id_reserva_pg": 118,
+  "fecha_publicacion": {
+    "$date": "2026-05-01T13:49:58.560Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a1"
+  },
+  "id_reserva_pg": 193,
+  "fecha_publicacion": {
+    "$date": "2026-04-23T15:55:48.530Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a2"
+  },
+  "id_reserva_pg": 91,
+  "fecha_publicacion": {
+    "$date": "2026-03-12T01:40:00.742Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a3"
+  },
+  "id_reserva_pg": 7,
+  "fecha_publicacion": {
+    "$date": "2026-04-05T14:32:04.687Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a4"
+  },
+  "id_reserva_pg": 171,
+  "fecha_publicacion": {
+    "$date": "2026-02-16T22:25:53.531Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 5,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a5"
+  },
+  "id_reserva_pg": 216,
+  "fecha_publicacion": {
+    "$date": "2026-03-24T08:21:06.383Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 5,
+    "confort": 3,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a6"
+  },
+  "id_reserva_pg": 109,
+  "fecha_publicacion": {
+    "$date": "2026-05-31T07:29:32.363Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a7"
+  },
+  "id_reserva_pg": 90,
+  "fecha_publicacion": {
+    "$date": "2026-04-10T23:36:46.442Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 4,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a8"
+  },
+  "id_reserva_pg": 2,
+  "fecha_publicacion": {
+    "$date": "2026-04-07T13:25:16.981Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306a9"
+  },
+  "id_reserva_pg": 183,
+  "fecha_publicacion": {
+    "$date": "2026-04-01T17:07:39.792Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306aa"
+  },
+  "id_reserva_pg": 146,
+  "fecha_publicacion": {
+    "$date": "2026-02-28T10:35:21.823Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ab"
+  },
+  "id_reserva_pg": 174,
+  "fecha_publicacion": {
+    "$date": "2026-05-11T06:10:26.471Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 2,
+    "ubicacion": 3,
+    "confort": 5,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ac"
+  },
+  "id_reserva_pg": 78,
+  "fecha_publicacion": {
+    "$date": "2026-02-21T04:51:05.481Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ad"
+  },
+  "id_reserva_pg": 100,
+  "fecha_publicacion": {
+    "$date": "2026-03-09T05:38:50.333Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ae"
+  },
+  "id_reserva_pg": 13,
+  "fecha_publicacion": {
+    "$date": "2026-05-07T03:58:38.277Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 2,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306af"
+  },
+  "id_reserva_pg": 195,
+  "fecha_publicacion": {
+    "$date": "2026-04-27T15:44:08.710Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 3,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b0"
+  },
+  "id_reserva_pg": 246,
+  "fecha_publicacion": {
+    "$date": "2026-03-03T00:01:27.395Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b1"
+  },
+  "id_reserva_pg": 107,
+  "fecha_publicacion": {
+    "$date": "2026-04-27T09:05:29.354Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b2"
+  },
+  "id_reserva_pg": 209,
+  "fecha_publicacion": {
+    "$date": "2026-05-16T22:31:49.771Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 5,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b3"
+  },
+  "id_reserva_pg": 92,
+  "fecha_publicacion": {
+    "$date": "2026-04-10T21:03:52.235Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b4"
+  },
+  "id_reserva_pg": 169,
+  "fecha_publicacion": {
+    "$date": "2026-04-24T22:48:04.941Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b5"
+  },
+  "id_reserva_pg": 204,
+  "fecha_publicacion": {
+    "$date": "2026-03-12T06:55:46.598Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 3,
+    "ubicacion": 1,
+    "confort": 4,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b6"
+  },
+  "id_reserva_pg": 213,
+  "fecha_publicacion": {
+    "$date": "2026-05-17T16:40:53.413Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b7"
+  },
+  "id_reserva_pg": 139,
+  "fecha_publicacion": {
+    "$date": "2026-04-01T00:04:28.486Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 4,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b8"
+  },
+  "id_reserva_pg": 17,
+  "fecha_publicacion": {
+    "$date": "2026-04-09T14:19:40.056Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 5,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306b9"
+  },
+  "id_reserva_pg": 208,
+  "fecha_publicacion": {
+    "$date": "2026-05-10T04:03:52.511Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 2,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ba"
+  },
+  "id_reserva_pg": 1,
+  "fecha_publicacion": {
+    "$date": "2026-03-19T03:48:37.751Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306bb"
+  },
+  "id_reserva_pg": 129,
+  "fecha_publicacion": {
+    "$date": "2026-04-07T12:31:11.480Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 4,
+    "ubicacion": 1,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306bc"
+  },
+  "id_reserva_pg": 51,
+  "fecha_publicacion": {
+    "$date": "2026-02-05T16:04:25.343Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 1,
+    "confort": 2,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306bd"
+  },
+  "id_reserva_pg": 206,
+  "fecha_publicacion": {
+    "$date": "2026-05-01T20:07:19.228Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 4,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306be"
+  },
+  "id_reserva_pg": 2,
+  "fecha_publicacion": {
+    "$date": "2026-02-06T08:55:47.250Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 2,
+    "ubicacion": 5,
+    "confort": 4,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306bf"
+  },
+  "id_reserva_pg": 100,
+  "fecha_publicacion": {
+    "$date": "2026-04-18T05:22:11.662Z"
+  },
+  "calificaciones": {
+    "limpieza": 5,
+    "atencion": 5,
+    "ubicacion": 2,
+    "confort": 1,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c0"
+  },
+  "id_reserva_pg": 150,
+  "fecha_publicacion": {
+    "$date": "2026-05-13T09:02:37.481Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 4,
+    "ubicacion": 5,
+    "confort": 2,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c1"
+  },
+  "id_reserva_pg": 175,
+  "fecha_publicacion": {
+    "$date": "2026-05-06T00:50:14.043Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 1,
+    "confort": 1,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c2"
+  },
+  "id_reserva_pg": 170,
+  "fecha_publicacion": {
+    "$date": "2026-02-15T00:22:35.185Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c3"
+  },
+  "id_reserva_pg": 219,
+  "fecha_publicacion": {
+    "$date": "2026-03-14T15:07:28.220Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c4"
+  },
+  "id_reserva_pg": 110,
+  "fecha_publicacion": {
+    "$date": "2026-04-25T06:06:02.567Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 1,
+    "relacion_calidad_precio": 2
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c5"
+  },
+  "id_reserva_pg": 148,
+  "fecha_publicacion": {
+    "$date": "2026-05-26T18:06:49.606Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 5,
+    "ubicacion": 5,
+    "confort": 4,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c6"
+  },
+  "id_reserva_pg": 37,
+  "fecha_publicacion": {
+    "$date": "2026-04-21T11:58:05.870Z"
+  },
+  "calificaciones": {
+    "limpieza": 3,
+    "atencion": 5,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c7"
+  },
+  "id_reserva_pg": 112,
+  "fecha_publicacion": {
+    "$date": "2026-02-06T16:51:51.768Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 2,
+    "ubicacion": 4,
+    "confort": 2,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c8"
+  },
+  "id_reserva_pg": 154,
+  "fecha_publicacion": {
+    "$date": "2026-02-22T15:10:48.742Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306c9"
+  },
+  "id_reserva_pg": 106,
+  "fecha_publicacion": {
+    "$date": "2026-04-29T23:08:36.525Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 5,
+    "ubicacion": 4,
+    "confort": 3,
+    "relacion_calidad_precio": 3
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Ruido"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306ca"
+  },
+  "id_reserva_pg": 78,
+  "fecha_publicacion": {
+    "$date": "2026-04-16T02:17:49.727Z"
+  },
+  "calificaciones": {
+    "limpieza": 4,
+    "atencion": 1,
+    "ubicacion": 3,
+    "confort": 2,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306cb"
+  },
+  "id_reserva_pg": 42,
+  "fecha_publicacion": {
+    "$date": "2026-02-20T13:46:38.944Z"
+  },
+  "calificaciones": {
+    "limpieza": 2,
+    "atencion": 4,
+    "ubicacion": 5,
+    "confort": 2,
+    "relacion_calidad_precio": 5
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306cc"
+  },
+  "id_reserva_pg": 225,
+  "fecha_publicacion": {
+    "$date": "2026-03-14T03:59:57.537Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 4,
+    "confort": 5,
+    "relacion_calidad_precio": 4
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0306cd"
+  },
+  "id_reserva_pg": 92,
+  "fecha_publicacion": {
+    "$date": "2026-03-30T11:01:52.120Z"
+  },
+  "calificaciones": {
+    "limpieza": 1,
+    "atencion": 1,
+    "ubicacion": 2,
+    "confort": 1,
+    "relacion_calidad_precio": 1
+  },
+  "comentario_libre": "Estadía agradable en general. Comentario generado para pruebas.",
+  "aspectos_destacables": [
+    "Ubicación",
+    "Atención"
+  ],
+  "aspectos_mejorables": [
+    "Mantenimiento",
+    "Wifi"
+  ]
+}]

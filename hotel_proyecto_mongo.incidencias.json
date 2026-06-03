@@ -1,0 +1,969 @@
+[{
+  "_id": {
+    "$oid": "6a1cf05fd9a02f7eec6330a5"
+  },
+  "id_reserva_pg": 1,
+  "categoria": "Mantenimiento",
+  "descripcion": "El aire acondicionado gotea",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2023-10-12T14:30:00.000Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": "2023-10-12T14:45:00Z",
+      "accion": "Se notificó a mantenimiento",
+      "responsable": "Recepción"
+    },
+    {
+      "fecha": "2023-10-12T15:30:00Z",
+      "accion": "Filtro reemplazado",
+      "responsable": "Técnico Juan"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030624"
+  },
+  "id_reserva_pg": 145,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-09T09:46:27.747Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030625"
+  },
+  "id_reserva_pg": 187,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-19T09:32:07.893Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030626"
+  },
+  "id_reserva_pg": 78,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-04-13T15:56:03.276Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030627"
+  },
+  "id_reserva_pg": 86,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-26T02:20:06.163Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030628"
+  },
+  "id_reserva_pg": 156,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-23T07:37:26.004Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030629"
+  },
+  "id_reserva_pg": 183,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-15T21:35:29.639Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062a"
+  },
+  "id_reserva_pg": 3,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-07T16:55:54.512Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062b"
+  },
+  "id_reserva_pg": 17,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-11T21:13:13.592Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062c"
+  },
+  "id_reserva_pg": 240,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-15T00:33:25.848Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062d"
+  },
+  "id_reserva_pg": 173,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-18T17:03:19.458Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062e"
+  },
+  "id_reserva_pg": 206,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-19T18:07:36.914Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03062f"
+  },
+  "id_reserva_pg": 178,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-18T21:54:15.648Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030630"
+  },
+  "id_reserva_pg": 184,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-08T18:45:09.350Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030631"
+  },
+  "id_reserva_pg": 221,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-30T16:00:22.484Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030632"
+  },
+  "id_reserva_pg": 75,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-29T20:59:43.260Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030633"
+  },
+  "id_reserva_pg": 72,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-12T15:53:15.285Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030634"
+  },
+  "id_reserva_pg": 204,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-03T23:13:18.502Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030635"
+  },
+  "id_reserva_pg": 241,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-22T22:22:45.782Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030636"
+  },
+  "id_reserva_pg": 185,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-30T17:26:06.526Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030637"
+  },
+  "id_reserva_pg": 157,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-04T11:39:53.335Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030638"
+  },
+  "id_reserva_pg": 94,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-11T02:45:53.890Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030639"
+  },
+  "id_reserva_pg": 233,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-05T16:06:08.921Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063a"
+  },
+  "id_reserva_pg": 181,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-30T21:31:37.009Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063b"
+  },
+  "id_reserva_pg": 179,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-24T06:58:34.731Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063c"
+  },
+  "id_reserva_pg": 72,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-18T05:06:06.997Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063d"
+  },
+  "id_reserva_pg": 179,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-14T15:04:11.169Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063e"
+  },
+  "id_reserva_pg": 68,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-19T21:20:08.137Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03063f"
+  },
+  "id_reserva_pg": 10,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-25T22:32:36.677Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030640"
+  },
+  "id_reserva_pg": 147,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-24T05:14:44.429Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030641"
+  },
+  "id_reserva_pg": 71,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-09T19:17:48.598Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030642"
+  },
+  "id_reserva_pg": 164,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-06T12:21:01.559Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030643"
+  },
+  "id_reserva_pg": 100,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-05-07T02:44:58.183Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030644"
+  },
+  "id_reserva_pg": 209,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-22T07:24:09.627Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030645"
+  },
+  "id_reserva_pg": 58,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-28T00:54:42.318Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030646"
+  },
+  "id_reserva_pg": 241,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-09T13:05:48.277Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030647"
+  },
+  "id_reserva_pg": 250,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-05-29T08:46:29.930Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030648"
+  },
+  "id_reserva_pg": 60,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-28T12:10:57.758Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030649"
+  },
+  "id_reserva_pg": 168,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "En progreso",
+  "fecha_reporte": {
+    "$date": "2026-04-14T01:12:24.135Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064a"
+  },
+  "id_reserva_pg": 148,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-14T17:15:22.517Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064b"
+  },
+  "id_reserva_pg": 159,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-17T10:45:08.533Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064c"
+  },
+  "id_reserva_pg": 191,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-04-11T23:53:07.862Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064d"
+  },
+  "id_reserva_pg": 103,
+  "categoria": "Mantenimiento",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Abierta",
+  "fecha_reporte": {
+    "$date": "2026-04-29T18:30:01.217Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064e"
+  },
+  "id_reserva_pg": 184,
+  "categoria": "Limpieza",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-05T06:02:59.880Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03064f"
+  },
+  "id_reserva_pg": 241,
+  "categoria": "Ruido",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-04-16T07:18:27.212Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030650"
+  },
+  "id_reserva_pg": 25,
+  "categoria": "Servicio al cliente",
+  "descripcion": "Incidencia reportada por el huésped. Generada para pruebas.",
+  "estado": "Resuelta",
+  "fecha_reporte": {
+    "$date": "2026-05-13T06:00:00.080Z"
+  },
+  "historial_acciones": [
+    {
+      "fecha": {
+        "$date": "2026-06-01T04:16:12.595Z"
+      },
+      "accion": "Revisión inicial programada",
+      "responsable": "Staff de Recepción"
+    }
+  ]
+}]

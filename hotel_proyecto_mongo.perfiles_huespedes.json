@@ -1,0 +1,1584 @@
+[{
+  "_id": {
+    "$oid": "6a1cf055d9a02f7eec6330a1"
+  },
+  "id_huesped_pg": 1,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Gluten",
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Español",
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 4500,
+    "fecha_afiliacion": "2023-01-15T00:00:00Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e3"
+  },
+  "id_huesped_pg": 2,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 6256,
+    "fecha_afiliacion": {
+      "$date": "2026-02-22T19:13:49.236Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e4"
+  },
+  "id_huesped_pg": 3,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 4694,
+    "fecha_afiliacion": {
+      "$date": "2026-02-12T15:35:02.275Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e5"
+  },
+  "id_huesped_pg": 4,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 1991,
+    "fecha_afiliacion": {
+      "$date": "2026-05-22T22:17:39.896Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e6"
+  },
+  "id_huesped_pg": 5,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 6059,
+    "fecha_afiliacion": {
+      "$date": "2026-03-30T03:09:50.141Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e7"
+  },
+  "id_huesped_pg": 6,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 9615,
+    "fecha_afiliacion": {
+      "$date": "2026-02-21T08:59:54.090Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e8"
+  },
+  "id_huesped_pg": 7,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 457,
+    "fecha_afiliacion": {
+      "$date": "2026-02-13T03:39:06.125Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305e9"
+  },
+  "id_huesped_pg": 8,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 9565,
+    "fecha_afiliacion": {
+      "$date": "2026-03-13T03:06:13.393Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ea"
+  },
+  "id_huesped_pg": 9,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 9713,
+    "fecha_afiliacion": {
+      "$date": "2026-03-19T23:33:59.073Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305eb"
+  },
+  "id_huesped_pg": 10,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 1429,
+    "fecha_afiliacion": {
+      "$date": "2026-05-11T19:26:10.132Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ec"
+  },
+  "id_huesped_pg": 11,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 2981,
+    "fecha_afiliacion": {
+      "$date": "2026-05-13T23:00:33.026Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ed"
+  },
+  "id_huesped_pg": 12,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 5758,
+    "fecha_afiliacion": {
+      "$date": "2026-04-03T04:56:58.437Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ee"
+  },
+  "id_huesped_pg": 13,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 5813,
+    "fecha_afiliacion": {
+      "$date": "2026-03-24T04:26:23.259Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ef"
+  },
+  "id_huesped_pg": 14,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 8159,
+    "fecha_afiliacion": {
+      "$date": "2026-03-07T15:57:12.261Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f0"
+  },
+  "id_huesped_pg": 15,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 3118,
+    "fecha_afiliacion": {
+      "$date": "2026-03-22T18:55:00.967Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f1"
+  },
+  "id_huesped_pg": 16,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 6253,
+    "fecha_afiliacion": {
+      "$date": "2026-05-25T21:10:34.070Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f2"
+  },
+  "id_huesped_pg": 17,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 1046,
+    "fecha_afiliacion": {
+      "$date": "2026-03-18T10:36:13.290Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f3"
+  },
+  "id_huesped_pg": 18,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 8514,
+    "fecha_afiliacion": {
+      "$date": "2026-02-14T04:55:56.054Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f4"
+  },
+  "id_huesped_pg": 19,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 6904,
+    "fecha_afiliacion": {
+      "$date": "2026-05-01T09:13:47.887Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f5"
+  },
+  "id_huesped_pg": 20,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 4340,
+    "fecha_afiliacion": {
+      "$date": "2026-04-10T15:10:47.102Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f6"
+  },
+  "id_huesped_pg": 21,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 23,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 2295,
+    "fecha_afiliacion": {
+      "$date": "2026-05-28T12:36:10.123Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f7"
+  },
+  "id_huesped_pg": 22,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 6204,
+    "fecha_afiliacion": {
+      "$date": "2026-04-22T04:21:26.014Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f8"
+  },
+  "id_huesped_pg": 23,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 8700,
+    "fecha_afiliacion": {
+      "$date": "2026-02-26T06:28:59.678Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305f9"
+  },
+  "id_huesped_pg": 24,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 23,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 6740,
+    "fecha_afiliacion": {
+      "$date": "2026-03-27T09:28:50.923Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305fa"
+  },
+  "id_huesped_pg": 25,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 1838,
+    "fecha_afiliacion": {
+      "$date": "2026-03-27T21:56:23.756Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305fb"
+  },
+  "id_huesped_pg": 26,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 614,
+    "fecha_afiliacion": {
+      "$date": "2026-04-24T12:41:02.871Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305fc"
+  },
+  "id_huesped_pg": 27,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 6713,
+    "fecha_afiliacion": {
+      "$date": "2026-05-14T14:11:37.054Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305fd"
+  },
+  "id_huesped_pg": 28,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 8785,
+    "fecha_afiliacion": {
+      "$date": "2026-03-13T15:27:03.951Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305fe"
+  },
+  "id_huesped_pg": 29,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 4214,
+    "fecha_afiliacion": {
+      "$date": "2026-05-12T12:47:52.089Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca0305ff"
+  },
+  "id_huesped_pg": 30,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 8107,
+    "fecha_afiliacion": {
+      "$date": "2026-04-28T04:07:28.723Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030600"
+  },
+  "id_huesped_pg": 31,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 5725,
+    "fecha_afiliacion": {
+      "$date": "2026-04-08T12:51:06.835Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030601"
+  },
+  "id_huesped_pg": 32,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 2009,
+    "fecha_afiliacion": {
+      "$date": "2026-05-23T22:43:21.340Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030602"
+  },
+  "id_huesped_pg": 33,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 23,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 1284,
+    "fecha_afiliacion": {
+      "$date": "2026-02-12T15:38:04.843Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030603"
+  },
+  "id_huesped_pg": 34,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 9435,
+    "fecha_afiliacion": {
+      "$date": "2026-02-10T12:55:00.368Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030604"
+  },
+  "id_huesped_pg": 35,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 8871,
+    "fecha_afiliacion": {
+      "$date": "2026-04-12T17:44:22.073Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030605"
+  },
+  "id_huesped_pg": 36,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 248,
+    "fecha_afiliacion": {
+      "$date": "2026-02-14T18:24:16.217Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030606"
+  },
+  "id_huesped_pg": 37,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 3501,
+    "fecha_afiliacion": {
+      "$date": "2026-02-19T19:44:39.335Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030607"
+  },
+  "id_huesped_pg": 38,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 5351,
+    "fecha_afiliacion": {
+      "$date": "2026-04-01T12:56:42.065Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030608"
+  },
+  "id_huesped_pg": 39,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 5657,
+    "fecha_afiliacion": {
+      "$date": "2026-05-29T20:26:32.812Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030609"
+  },
+  "id_huesped_pg": 40,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 7761,
+    "fecha_afiliacion": {
+      "$date": "2026-02-26T22:07:36.369Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060a"
+  },
+  "id_huesped_pg": 41,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 3400,
+    "fecha_afiliacion": {
+      "$date": "2026-05-18T11:31:54.088Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060b"
+  },
+  "id_huesped_pg": 42,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 585,
+    "fecha_afiliacion": {
+      "$date": "2026-02-11T16:43:00.363Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060c"
+  },
+  "id_huesped_pg": 43,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 1441,
+    "fecha_afiliacion": {
+      "$date": "2026-03-14T01:49:12.636Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060d"
+  },
+  "id_huesped_pg": 44,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 6197,
+    "fecha_afiliacion": {
+      "$date": "2026-04-12T08:24:57.425Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060e"
+  },
+  "id_huesped_pg": 45,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 5879,
+    "fecha_afiliacion": {
+      "$date": "2026-05-02T21:47:20.379Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03060f"
+  },
+  "id_huesped_pg": 46,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 4888,
+    "fecha_afiliacion": {
+      "$date": "2026-03-06T04:58:25.135Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030610"
+  },
+  "id_huesped_pg": 47,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 3664,
+    "fecha_afiliacion": {
+      "$date": "2026-05-29T01:01:59.331Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030611"
+  },
+  "id_huesped_pg": 48,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 8678,
+    "fecha_afiliacion": {
+      "$date": "2026-04-15T01:15:25.623Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030612"
+  },
+  "id_huesped_pg": 49,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 7080,
+    "fecha_afiliacion": {
+      "$date": "2026-04-03T20:21:52.684Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030613"
+  },
+  "id_huesped_pg": 50,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 1994,
+    "fecha_afiliacion": {
+      "$date": "2026-02-09T22:59:14.031Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030614"
+  },
+  "id_huesped_pg": 51,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 3810,
+    "fecha_afiliacion": {
+      "$date": "2026-03-29T17:05:21.433Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030615"
+  },
+  "id_huesped_pg": 52,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 4254,
+    "fecha_afiliacion": {
+      "$date": "2026-03-18T06:31:11.654Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030616"
+  },
+  "id_huesped_pg": 53,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 225,
+    "fecha_afiliacion": {
+      "$date": "2026-05-10T18:27:01.675Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030617"
+  },
+  "id_huesped_pg": 54,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 5488,
+    "fecha_afiliacion": {
+      "$date": "2026-03-13T09:36:21.308Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030618"
+  },
+  "id_huesped_pg": 55,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 23,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 3733,
+    "fecha_afiliacion": {
+      "$date": "2026-03-09T16:42:45.579Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030619"
+  },
+  "id_huesped_pg": 56,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 6945,
+    "fecha_afiliacion": {
+      "$date": "2026-05-26T14:10:17.749Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061a"
+  },
+  "id_huesped_pg": 57,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 8345,
+    "fecha_afiliacion": {
+      "$date": "2026-02-23T02:29:48.655Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061b"
+  },
+  "id_huesped_pg": 58,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Ortopédica",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Platino",
+    "puntos_acumulados": 8093,
+    "fecha_afiliacion": {
+      "$date": "2026-04-28T20:29:50.046Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061c"
+  },
+  "id_huesped_pg": 59,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 22,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 3116,
+    "fecha_afiliacion": {
+      "$date": "2026-02-26T00:24:23.823Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061d"
+  },
+  "id_huesped_pg": 60,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 20,
+    "vista_deseada": "Ciudad"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 8198,
+    "fecha_afiliacion": {
+      "$date": "2026-05-20T11:01:14.645Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061e"
+  },
+  "id_huesped_pg": 61,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Gluten"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Oro",
+    "puntos_acumulados": 7834,
+    "fecha_afiliacion": {
+      "$date": "2026-03-03T00:24:35.256Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca03061f"
+  },
+  "id_huesped_pg": 62,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Estándar",
+    "temperatura_ideal": 18,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Francés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 2337,
+    "fecha_afiliacion": {
+      "$date": "2026-02-06T04:34:56.724Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030620"
+  },
+  "id_huesped_pg": 63,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 19,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Nueces"
+  ],
+  "idiomas": [
+    "Inglés"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 2704,
+    "fecha_afiliacion": {
+      "$date": "2026-04-14T01:40:41.044Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030621"
+  },
+  "id_huesped_pg": 64,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Jardín"
+  },
+  "restricciones_alimentarias": [
+    "Lácteos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 5736,
+    "fecha_afiliacion": {
+      "$date": "2026-05-11T10:47:43.376Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030622"
+  },
+  "id_huesped_pg": 65,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Espuma",
+    "temperatura_ideal": 21,
+    "vista_deseada": "Piscina"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Español"
+  ],
+  "programa_lealtad": {
+    "nivel": "Plata",
+    "puntos_acumulados": 1537,
+    "fecha_afiliacion": {
+      "$date": "2026-03-28T17:57:53.468Z"
+    }
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1d078ccd7cdecbca030623"
+  },
+  "id_huesped_pg": 66,
+  "preferencias_habitacion": {
+    "tipo_almohada": "Plumas",
+    "temperatura_ideal": 23,
+    "vista_deseada": "Mar"
+  },
+  "restricciones_alimentarias": [
+    "Mariscos"
+  ],
+  "idiomas": [
+    "Alemán"
+  ],
+  "programa_lealtad": {
+    "nivel": "Diamante",
+    "puntos_acumulados": 4211,
+    "fecha_afiliacion": {
+      "$date": "2026-03-21T08:45:18.393Z"
+    }
+  }
+}]
