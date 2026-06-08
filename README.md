@@ -22,6 +22,7 @@ Si utiliza MongoDB Atlas, asegúrese de tener la cadena de conexión (URI) gener
 Reemplace <password> con la contraseña de su usuario de base de datos.
 
 El sistema creará automáticamente la base de datos hotel_proyecto_mongo y sus colecciones respectivas al realizar la primera inserción de datos a través de la API.
+Luego agregar los .json a mongo para visualizar todo correctamente
 
 Paso 3: Instalación de Dependencias del Servidor
 Abra la terminal y navegue hasta el directorio raíz del proyecto (hotel_app).
@@ -42,8 +43,8 @@ Levante el servidor ejecutando:
 node index.js
 Si las conexiones son exitosas, la consola mostrará:
 
-🚀 Sistema del Hotel corriendo en: http://localhost:3000
+Sistema del Hotel corriendo en: http://localhost:3000
 
-✅ Conectado a MongoDB
+Conectado a MongoDB
 
 Abra Google Chrome o cualquier navegador moderno y acceda a http://localhost:3000 para operar el sistema.
